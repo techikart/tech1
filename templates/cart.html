@@ -1,0 +1,37 @@
+
+{% extends "base.html"%}
+{% load static %}
+
+
+{% block maincontent %}
+<section class="bg-dark text-light">
+    Cart
+</section>
+
+<div class="table-responsive-sm">
+    <table class="table table-bordered align-middle">
+        <tr>
+            <th>name</th>
+            <td>....</td>
+        </tr>
+        <tr>
+            <th>address</th>
+            <td>...</td>
+        </tr>
+        <tr>
+            <th>mobile</th>
+            <td>...</td>
+        </tr>
+        <tr>
+            <th>products in the cart</th>
+            <td>...</td>
+        </tr>
+    </table>
+</div>
+<div class="container d-grid gap-2 mx-auto">
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#reg" type="button">BUY</button>
+</div>
+<section class="bg-secondary text-light">
+    thankyou for choosing us
+</section>
+{% endblock maincontent %}
