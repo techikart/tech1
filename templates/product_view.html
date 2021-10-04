@@ -54,7 +54,8 @@
 
         <div class="d-grid gap-2 mx-auto">
           <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#reg" type="button">BUY</button>
-          <a href="/cart/" class="btn btn-light" type="button">ADD TO CART</a>
+          <!--<a href="/cart/" class="btn btn-light shop-item-button" type="button">ADD TO CART</a>-->
+          <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
         </div>
 
 </div>
@@ -65,7 +66,21 @@
     et hic quae facilis deserunt commodi. Dignissimos temporibus 
     incidunt asperiores tenetur, consequatur magni nostrum quaerat velit id quos?</p>
 </div>
-
+ <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
 
 
       <!-- Modal TO BUY 
