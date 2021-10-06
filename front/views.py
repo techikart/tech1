@@ -22,4 +22,8 @@ def about(request):
 
 def cart(request):
     return render(request,'cart.html')
+    
+def buyer(request):
+    return render(request,'buyer.html')
+
 

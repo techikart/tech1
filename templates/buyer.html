@@ -1,0 +1,42 @@
+{% extends "base.html"%} {% load static %} {% block maincontent %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="signup-form">
+                <form action="" class="mt-5 border p-4 bg-light shadow">
+                    <h4 class="mb-5 text-secondary"> ORDER FORM</h4>
+                    <div class="row">
+                        <div class="mb-3 col-md-12">
+                            <label>FULL Name<span class="text-danger">*</span></label>
+                            <input type="text" name="fname" class="form-control" placeholder="Enter FULL Name">
+                        </div>
+
+                        <div class="mb-3 col-md-12">
+                            <label>Email<span class="text-danger">*</span></label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label>mobile<span class="text-danger">*</span></label>
+                            <input type="mobile" name="mobile" class="form-control" placeholder="mobile">
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label>address<span class="text-danger">*</span></label>
+                            <input type="address" name="address" class="form-control" placeholder="address">
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label>pin code<span class="text-danger">*</span></label>
+                            <input type="pin" name="pin" class="form-control" placeholder="pin">
+                        </div>
+                        <div class="col-md-12">
+                           <button class="btn btn-primary float-end btn-purchase">ORDER Now</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="text-center mt-3 text-secondary"> THANKYOU FOR THE PURCHASE  <a href="/">LATEST OFFER</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock maincontent %}

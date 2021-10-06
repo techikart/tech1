@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from front.views import home, product, product_view, about, cart, question
+from front.views import home, product, product_view, about, cart, question, buyer
+from productdb import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +27,6 @@ urlpatterns = [
     path('about/', about),
     path('cart/', cart),
     path('question/', question),
+    path('buyer/', buyer),
+    path('a/', views.dataUpload),
 ]
